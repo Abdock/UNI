@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using UNI.Data;
 using UNI.Models;
 
 namespace UNI.Controllers
@@ -12,15 +13,17 @@ namespace UNI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private ApplicationDbContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _db = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_db.Teachers.ToList());
         }
 
         public IActionResult SignIn()

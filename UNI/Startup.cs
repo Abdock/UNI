@@ -26,13 +26,7 @@ namespace UNI
         {
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(opt =>
-                opt.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=allocator123;Database=UNI"));
-            var db = new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>());
-            var list = db.Teachers.ToList();
-            foreach (var teacher in list)
-            {
-                Console.WriteLine($"Name: {teacher.Name}, Surname: {teacher.Surname}");
-            }
+                opt.UseNpgsql("DefaultConnection"));
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
