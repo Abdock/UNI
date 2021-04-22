@@ -22,44 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Teacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Teacher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/UNI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/UNI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Connect to database, and correct some classes with db" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,13 +51,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1rWJgt7Zlj0nRSZpPeCyUzEJ23y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -154,7 +120,7 @@
       <workItem from="1619111432849" duration="399000" />
       <workItem from="1619111884583" duration="438000" />
       <workItem from="1619112631400" duration="2319000" />
-      <workItem from="1619120075214" duration="1432000" />
+      <workItem from="1619120075214" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <created>1619104791262</created>
@@ -191,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619111579095</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Connect to database, and correct some classes with db">
+      <created>1619121620008</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619121620008</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,11 +185,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Created project" />
     <MESSAGE value="Modify config" />
     <MESSAGE value="Some commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some commit" />
+    <MESSAGE value="Connect to database, and correct some classes with db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connect to database, and correct some classes with db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619108446128">
@@ -235,29 +210,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619121231853">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619121700561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619121231853" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619121231852">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619121700561" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619121700561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619121231852" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619121231852">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619121700561" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619121700561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619121231852" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619121231852">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619121700561" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619121700561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619121231852" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619121700561" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1619120127611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619120127611" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619110774160">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619121627243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619110774160" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619121627243" />
   </component>
 </project>

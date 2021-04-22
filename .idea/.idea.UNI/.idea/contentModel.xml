@@ -19,7 +19,9 @@
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
+          <e p="Group.cs" t="Include" />
           <e p="Student.cs" t="Include" />
+          <e p="subject.cs" t="Include" />
           <e p="Teacher.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
