@@ -4,11 +4,16 @@
     <projectFile>UNI/UNI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="" />
+    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Created project">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -16,16 +21,17 @@
         <option value="$PROJECT_DIR$/UNI/Data/Database.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/SignIn.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/UNI/appsettings.json" />
         <option value="$PROJECT_DIR$/UNI/DBClasses/Student.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
         <option value="$PROJECT_DIR$/UNI/Startup.cs" />
         <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/DBClasses/Teacher.cs" />
+        <option value="$PROJECT_DIR$/UNI/appsettings.json" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1rWJgt7Zlj0nRSZpPeCyUzEJ23y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -84,8 +90,16 @@
       <updated>1619086026555</updated>
       <workItem from="1619086033432" duration="129000" />
       <workItem from="1619087045047" duration="6548000" />
-      <workItem from="1619093798044" duration="5047000" />
+      <workItem from="1619093798044" duration="5989000" />
     </task>
+    <task id="LOCAL-00001" summary="Created project">
+      <created>1619104791262</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619104791262</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,27 +109,41 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Created project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619088262039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1619088262039" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619103741593">
+    <state x="561" y="262" key="Github.ShareDialog" timestamp="1619104718067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619103741593" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619103741593">
+    <state x="561" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104718067" />
+    <state x="392" y="72" key="Github.UntrackedFilesDialog" timestamp="1619104734167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619103741593" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619103741593">
+    <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619104918966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619103741593" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619103741593">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619104918966" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619104918966">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619103741593" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619104918966" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619104918966">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619104918966" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619104918966">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619104918966" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619104825493">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619104825493" />
   </component>
 </project>
