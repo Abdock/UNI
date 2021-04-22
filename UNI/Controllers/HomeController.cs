@@ -13,17 +13,17 @@ namespace UNI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private ApplicationDbContext _db;
+        private ApplicationDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext dbContext)
         {
             _logger = logger;
-            _db = context;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
         {
-            return View(_db.Teachers.ToList());
+            return View(_dbContext.teacher.ToList());
         }
 
         public IActionResult SignIn()

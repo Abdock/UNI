@@ -5,8 +5,8 @@ namespace UNI.Data
 {
     public sealed class ApplicationDbContext : DbContext
     {
-        //public DbSet<Student> Students { get; set; }
-        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Teacher> teacher { get; set; }
+        public DbSet<Student> student { get; set; }
         
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -15,7 +15,7 @@ namespace UNI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("DefaultConnection");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=allocator123;Database=UNI");
         }
     }
 }
