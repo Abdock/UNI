@@ -16,14 +16,11 @@
         </e>
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
-          <e p="Database.cs" t="Include" />
-        </e>
-        <e p="DBClasses" t="Include">
-          <e p="Student.cs" t="Include" />
-          <e p="Teacher.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
+          <e p="Student.cs" t="Include" />
+          <e p="Teacher.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
