@@ -19,7 +19,7 @@ namespace UNI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=allocator123;Database=UNI");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=12345;Database=UNI");
         }
     }
 }
