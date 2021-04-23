@@ -1,0 +1,29 @@
+﻿@model UNI.ViewModels.RegisterModel
+ 
+<h2>Регистрация</h2>
+ 
+<form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div>
+            <label asp-for="Type">Введите тип пользователя: teacher, student</label><br />
+            <input asp-for="Type" />
+            <span asp-validation-for="Type" ></span>
+            <br />
+            <label asp-for="Name">Введите имя пользователя</label><br />
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+            <br />
+            <label asp-for="Surname">Введите фамилию пользователя</label><br />
+            <input asp-for="Surname" />
+            <span asp-validation-for="Surname"></span>
+            <br />
+            <label asp-for="PhoneNumber">Введите телефонный номер пользователя</label><br />
+            <input asp-for="PhoneNumber" />
+            <span asp-validation-for="PhoneNumber"></span>
+        </div>
+        <div>
+            <input type="submit" value="Регистрация" />
+        </div>
+    </div>
+</form>

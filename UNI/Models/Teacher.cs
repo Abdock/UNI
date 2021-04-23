@@ -11,20 +11,19 @@ namespace UNI.DBClasses
         public string teacher_surname { get; set; }
         public DateTime employment_date { get; set; }
         
-        public string password { get; set; }
+        public string phone_number { get; set; }
 
         public Teacher()
         {
             
         }
 
-        public Teacher(long teacherId, string teacherName, string teacherSurname, DateTime employmentDate, string password)
+        public Teacher(long teacherId, string teacherName, string teacherSurname, DateTime employmentDate)
         {
             teacher_id = teacherId;
             teacher_name = teacherName;
             teacher_surname = teacherSurname;
             employment_date = employmentDate;
-            this.password = password;
         }
     }
 }

@@ -35,7 +35,6 @@ C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\UNI.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\UNI.pdb
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\UNI.genruntimeconfig.cache
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\UNI.csproj.CopyComplete
-C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignIn.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
@@ -66,5 +65,6 @@ C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win-x
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Student.cshtml.g.cs

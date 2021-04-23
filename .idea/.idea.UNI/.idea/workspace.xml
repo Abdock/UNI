@@ -22,27 +22,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Add dbsets for all classes from db">
-      <change afterPath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Pages/Account/Login.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" afterDir="false" />
+    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Added models and controller for authentication">
+      <change afterPath="$PROJECT_DIR$/UNI/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Group.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Group.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Models/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Subject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Models/Teacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Teacher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/SignIn.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Pages/Account/Login.cshtml.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/SignIn.cshtml.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
@@ -68,22 +72,25 @@
         <option value="$PROJECT_DIR$/UNI/DBClasses/Teacher.cs" />
         <option value="$PROJECT_DIR$/UNI/Program.cs" />
         <option value="$PROJECT_DIR$/UNI/appsettings.json" />
-        <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/subject.cs" />
-        <option value="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" />
         <option value="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" />
         <option value="$PROJECT_DIR$/UNI/Pages/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Subject.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Group.cs" />
-        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Login.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Startup.cs" />
+        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Models/User.cs" />
+        <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
+        <option value="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Student.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Teacher.cs" />
-        <option value="$PROJECT_DIR$/UNI/Startup.cs" />
         <option value="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
       </list>
     </option>
   </component>
@@ -159,7 +166,8 @@
       <workItem from="1619112631400" duration="2319000" />
       <workItem from="1619120075214" duration="1616000" />
       <workItem from="1619122593870" duration="596000" />
-      <workItem from="1619153873981" duration="8940000" />
+      <workItem from="1619153873981" duration="9078000" />
+      <workItem from="1619177619534" duration="10903000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <created>1619104791262</created>
@@ -217,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619122920368</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added models and controller for authentication">
+      <created>1619166508700</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619166508700</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +261,8 @@
     <MESSAGE value="Connect to database, and correct some classes with db" />
     <MESSAGE value="Added 2 classes for work with db" />
     <MESSAGE value="Add dbsets for all classes from db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dbsets for all classes from db" />
+    <MESSAGE value="Added models and controller for authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added models and controller for authentication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619108446128">
@@ -265,22 +281,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619160454825">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619191178893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619160454825" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619160454825">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619191178893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619160454825" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619160454825">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619191178893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619160454825" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619160454825">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619191178893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619160454825" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1619120127611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -293,10 +309,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1619165428164" />
-    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619165393048">
+    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619189440322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1619165393048" />
+    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1619189440322" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1619162701919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

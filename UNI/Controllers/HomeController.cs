@@ -26,7 +26,7 @@ namespace UNI.Controllers
             return View(_dbContext.teacher.ToList());
         }
 
-        public IActionResult SignIn()
+        public IActionResult Student()
         {
             return View();
         }

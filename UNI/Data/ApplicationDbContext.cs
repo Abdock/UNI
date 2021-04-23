@@ -10,6 +10,7 @@ namespace UNI.Data
         public DbSet<Student> student { get; set; }
         public DbSet<Subject> subject { get; set; }
         public DbSet<Group> group { get; set; }
+        public DbSet<User> users { get; set; }
         
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
