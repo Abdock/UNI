@@ -806,12 +806,15 @@ true posixrules
     <database id="6" parent="1" name="UNI">
       <ObjectId>57769</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>20733</IntrospectionStateNumber>
+      <IntrospectionStateNumber>20785</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|57770|57772|1
 sequence|table|57776|57778|1
 sequence|table|57786|57788|1
 sequence|table|57792|57794|1
+sequence|table|57829|57831|1
+sequence|table|57835|57837|1
+sequence|table|57852|57854|1
 </Relations>
     </database>
     <database id="7" parent="1" name="University">
@@ -880,7 +883,7 @@ sequence|table|57792|57794|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>20734</IntrospectionStateNumber>
+      <IntrospectionStateNumber>20786</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="23" parent="6" name="heap">
@@ -950,99 +953,137 @@ sequence|table|57792|57794|1
     <language id="32" parent="6" name="internal"/>
     <language id="33" parent="6" name="plpgsql"/>
     <language id="34" parent="6" name="sql"/>
-    <sequence id="35" parent="22" name="group_group_id_seq">
+    <sequence id="35" parent="22" name="faculty_faculty_id_seq">
+      <ObjectId>57829</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20759</StateNumber>
+      <DataType>integer|0s</DataType>
+    </sequence>
+    <sequence id="36" parent="22" name="group_group_id_seq">
       <ObjectId>57776</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20693</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="36" parent="22" name="student_student_id_seq">
+    <sequence id="37" parent="22" name="speciality_speciality_id_seq">
+      <ObjectId>57835</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20760</StateNumber>
+      <DataType>integer|0s</DataType>
+    </sequence>
+    <sequence id="38" parent="22" name="student_student_id_seq">
       <ObjectId>57770</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20692</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="37" parent="22" name="subject_subject_id_seq">
+    <sequence id="39" parent="22" name="subject_subject_id_seq">
       <ObjectId>57792</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20696</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="38" parent="22" name="teacher_teacher_id_seq">
+    <sequence id="40" parent="22" name="teacher_teacher_id_seq">
       <ObjectId>57786</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20695</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="39" parent="22" name="attendance">
+    <sequence id="41" parent="22" name="users_user_id_seq">
+      <ObjectId>57852</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20776</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="42" parent="22" name="attendance">
       <ObjectId>57809</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20704</StateNumber>
     </table>
-    <table id="40" parent="22" name="group">
+    <table id="43" parent="22" name="faculty">
+      <ObjectId>57831</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20759</StateNumber>
+    </table>
+    <table id="44" parent="22" name="group">
       <ObjectId>57778</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20708</StateNumber>
     </table>
-    <table id="41" parent="22" name="schedule">
+    <table id="45" parent="22" name="schedule">
       <ObjectId>57805</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20698</StateNumber>
     </table>
-    <table id="42" parent="22" name="student">
+    <table id="46" parent="22" name="speciality">
+      <ObjectId>57837</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20764</StateNumber>
+    </table>
+    <table id="47" parent="22" name="speciality_teacher">
+      <ObjectId>57845</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20763</StateNumber>
+    </table>
+    <table id="48" parent="22" name="student">
       <ObjectId>57772</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>20707</StateNumber>
+      <StateNumber>20762</StateNumber>
     </table>
-    <table id="43" parent="22" name="subject">
+    <table id="49" parent="22" name="subject">
       <ObjectId>57794</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20696</StateNumber>
     </table>
-    <table id="44" parent="22" name="teacher">
+    <table id="50" parent="22" name="teacher">
       <ObjectId>57788</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>20729</StateNumber>
+      <StateNumber>20737</StateNumber>
     </table>
-    <table id="45" parent="22" name="teacher_subject">
+    <table id="51" parent="22" name="teacher_subject">
       <ObjectId>57801</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>20697</StateNumber>
     </table>
-    <column id="46" parent="39" name="week">
+    <table id="52" parent="22" name="users">
+      <ObjectId>57854</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>20776</StateNumber>
+    </table>
+    <column id="53" parent="42" name="week">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20699</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="47" parent="39" name="student_id">
+    <column id="54" parent="42" name="student_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20699</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="48" parent="39" name="subject_id">
+    <column id="55" parent="42" name="subject_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20699</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="49" parent="39" name="grade">
+    <column id="56" parent="42" name="grade">
       <Position>4</Position>
       <DataType>double precision|0s</DataType>
       <StateNumber>20700</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="50" parent="39" name="weight">
+    <column id="57" parent="42" name="weight">
       <Position>5</Position>
       <DataType>double precision|0s</DataType>
       <StateNumber>20704</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <index id="51" parent="39" name="attendance_week_idx">
+    <index id="58" parent="42" name="attendance_week_idx">
       <ObjectId>57812</ObjectId>
       <StateNumber>20704</StateNumber>
       <ColNames>week
@@ -1050,7 +1091,29 @@ student_id
 subject_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="52" parent="40" name="group_id">
+    <column id="59" parent="43" name="faculty_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20759</StateNumber>
+      <TypeId>23</TypeId>
+      <IdentityKind>always</IdentityKind>
+      <Computed>1</Computed>
+    </column>
+    <column id="60" parent="43" name="faculty_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20759</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="61" parent="43" name="faculty_faculty_id_idx">
+      <ObjectId>57834</ObjectId>
+      <StateNumber>20759</StateNumber>
+      <ColNames>faculty_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="62" parent="44" name="group_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1059,48 +1122,98 @@ subject_id</ColNames>
       <IdentityKind>always</IdentityKind>
       <Computed>1</Computed>
     </column>
-    <column id="53" parent="40" name="group_name">
+    <column id="63" parent="44" name="group_name">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20693</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="40" name="curator_id">
+    <column id="64" parent="44" name="curator_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20708</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="55" parent="40" name="group_group_id_idx">
+    <index id="65" parent="44" name="group_group_id_idx">
       <ObjectId>57781</ObjectId>
       <StateNumber>20693</StateNumber>
       <ColNames>group_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="56" parent="41" name="group_id">
+    <column id="66" parent="45" name="group_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20698</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="57" parent="41" name="subject_id">
+    <column id="67" parent="45" name="subject_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20698</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="58" parent="41" name="schedule_group_id_idx">
+    <index id="68" parent="45" name="schedule_group_id_idx">
       <ObjectId>57808</ObjectId>
       <StateNumber>20698</StateNumber>
       <ColNames>group_id
 subject_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="59" parent="42" name="student_id">
+    <column id="69" parent="46" name="speciality_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20760</StateNumber>
+      <TypeId>23</TypeId>
+      <IdentityKind>always</IdentityKind>
+      <Computed>1</Computed>
+    </column>
+    <column id="70" parent="46" name="speciality_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20760</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="71" parent="46" name="faculty_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20764</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="72" parent="46" name="speciality_speciality_id_idx">
+      <ObjectId>57840</ObjectId>
+      <StateNumber>20760</StateNumber>
+      <ColNames>speciality_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="73" parent="47" name="specilaity_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20763</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="74" parent="47" name="teacher_id">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20763</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="75" parent="47" name="speciality_teacher_specilaity_id_idx">
+      <ObjectId>57848</ObjectId>
+      <StateNumber>20763</StateNumber>
+      <ColNames>specilaity_id
+teacher_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="76" parent="48" name="student_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1109,62 +1222,63 @@ subject_id</ColNames>
       <IdentityKind>always</IdentityKind>
       <Computed>1</Computed>
     </column>
-    <column id="60" parent="42" name="student_name">
+    <column id="77" parent="48" name="student_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20692</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="61" parent="42" name="student_surname">
+    <column id="78" parent="48" name="student_surname">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20692</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="62" parent="42" name="phone_number">
+    <column id="79" parent="48" name="phone_number">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20692</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="63" parent="42" name="enrollment_date">
+    <column id="80" parent="48" name="enrollment_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>20716</StateNumber>
+      <StateNumber>20770</StateNumber>
+      <DefaultExpression>CURRENT_DATE</DefaultExpression>
       <TypeId>1082</TypeId>
     </column>
-    <column id="64" parent="42" name="profession">
+    <column id="81" parent="48" name="speciality_id">
       <Position>6</Position>
-      <DataType>varchar(30)|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>20692</StateNumber>
-      <TypeId>1043</TypeId>
+      <StateNumber>20762</StateNumber>
+      <TypeId>23</TypeId>
     </column>
-    <column id="65" parent="42" name="group_id">
+    <column id="82" parent="48" name="group_id">
       <Position>7</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>20706</StateNumber>
+      <StateNumber>20756</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="66" parent="42" name="course">
+    <column id="83" parent="48" name="course">
       <Position>8</Position>
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>20707</StateNumber>
+      <StateNumber>20767</StateNumber>
+      <DefaultExpression>1</DefaultExpression>
       <TypeId>21</TypeId>
     </column>
-    <index id="67" parent="42" name="student_student_id_idx">
+    <index id="84" parent="48" name="student_student_id_idx">
       <ObjectId>57775</ObjectId>
-      <StateNumber>20692</StateNumber>
+      <StateNumber>20762</StateNumber>
       <ColNames>student_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="68" parent="43" name="subject_id">
+    <column id="85" parent="49" name="subject_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1173,20 +1287,20 @@ subject_id</ColNames>
       <IdentityKind>always</IdentityKind>
       <Computed>1</Computed>
     </column>
-    <column id="69" parent="43" name="subject_name">
+    <column id="86" parent="49" name="subject_name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20696</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="70" parent="43" name="subject_subject_id_idx">
+    <index id="87" parent="49" name="subject_subject_id_idx">
       <ObjectId>57800</ObjectId>
       <StateNumber>20696</StateNumber>
       <ColNames>subject_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="71" parent="44" name="teacher_id">
+    <column id="88" parent="50" name="teacher_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1195,53 +1309,98 @@ subject_id</ColNames>
       <IdentityKind>always</IdentityKind>
       <Computed>1</Computed>
     </column>
-    <column id="72" parent="44" name="teacher_name">
+    <column id="89" parent="50" name="teacher_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20695</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="73" parent="44" name="teacher_surname">
+    <column id="90" parent="50" name="teacher_surname">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20695</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="74" parent="44" name="employment_date">
+    <column id="91" parent="50" name="employment_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>20732</StateNumber>
+      <StateNumber>20773</StateNumber>
+      <DefaultExpression>CURRENT_DATE</DefaultExpression>
       <TypeId>1082</TypeId>
     </column>
-    <index id="75" parent="44" name="teacher_teacher_id_idx">
+    <index id="92" parent="50" name="teacher_teacher_id_idx">
       <ObjectId>57791</ObjectId>
       <StateNumber>20695</StateNumber>
       <ColNames>teacher_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <column id="76" parent="45" name="teacher_id">
+    <column id="93" parent="51" name="teacher_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20697</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="77" parent="45" name="subject_id">
+    <column id="94" parent="51" name="subject_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>20697</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="78" parent="45" name="teacher_subject_teacher_id_idx">
+    <index id="95" parent="51" name="teacher_subject_teacher_id_idx">
       <ObjectId>57804</ObjectId>
       <StateNumber>20697</StateNumber>
       <ColNames>teacher_id
 subject_id</ColNames>
       <Unique>1</Unique>
     </index>
+    <column id="96" parent="52" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20776</StateNumber>
+      <DefaultExpression>nextval(&apos;users_user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="97" parent="52" name="password">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20776</StateNumber>
+      <DefaultExpression>&apos;Password123&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="98" parent="52" name="type">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>20776</StateNumber>
+      <DefaultExpression>&apos;student&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="99" parent="52" name="users_pk">
+      <ObjectId>57864</ObjectId>
+      <StateNumber>20778</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="100" parent="52" name="users_user_id_uindex">
+      <ObjectId>57863</ObjectId>
+      <StateNumber>20777</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="101" parent="52" name="users_pk">
+      <ObjectId>57865</ObjectId>
+      <StateNumber>20778</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pk</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

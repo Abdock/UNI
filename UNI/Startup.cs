@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,9 +26,12 @@ namespace UNI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(opt =>
                 opt.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=allocator123;Database=UNI"));
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(opt =>
+                opt.LoginPath = new PathString("/Account/Login"));
+            
+            services.AddControllersWithViews();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,6 +49,7 @@ namespace UNI
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

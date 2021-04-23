@@ -66,3 +66,5 @@ C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win-x
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
