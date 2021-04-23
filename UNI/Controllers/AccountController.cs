@@ -55,6 +55,7 @@ namespace UNI.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            ViewData["db"] = _context;
             return View();
         }
 
@@ -71,14 +72,23 @@ namespace UNI.Controllers
                 else
                 {
                     var student = await _context.student.AddAsync(new Student
-                        {student_name = model.Name, student_surname = model.Surname, phone_number = model.PhoneNumber});
-                    await _context.users.AddAsync(new User {password = "Password", type = model.Type, second_id = student.Entity.student_id});
+                        {student_name = model.Name, student_surname = model.Surname, phone_number = model.PhoneNumber, speciality_id = int.Parse(model.Speciality.Split(':')[0]), group_id = 1});
+                    await _context.users.AddAsync(new User
+                    {
+                        password = "Password", type = model.Type, second_id = student.Entity.student_id
+                    });
                 }
                 await _context.SaveChangesAsync();
                 await Authenticate(_context.users.OrderByDescending(user => user.user_id).First().user_id);
-                return RedirectToAction("Index", "Home");
+                if (model.Type == "teacher")
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                return RedirectToAction("Student", "Home");
             }
-            return View(model);
+            ViewData["model"] = model;
+            ViewData["db"] = _context;
+            return View();
         }
 
         private async Task Authenticate(long id)

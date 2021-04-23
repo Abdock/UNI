@@ -22,36 +22,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Added models and controller for authentication">
-      <change afterPath="$PROJECT_DIR$/UNI/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" afterDir="false" />
+    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Added authentication">
+      <change afterPath="$PROJECT_DIR$/UNI/Models/Attendance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Models/Faculty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Models/Schedule.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Models/Speciality.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/Models/TeacherSubject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Student.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Models/Teacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Teacher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/SignIn.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Pages/Account/Login.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/SignIn.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
     </list>
@@ -80,17 +75,27 @@
         <option value="$PROJECT_DIR$/UNI/Models/Group.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Startup.cs" />
-        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/User.cs" />
         <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
-        <option value="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" />
-        <option value="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Student.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Teacher.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Account/Student.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Models/Speciality.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/Faculty.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/Attendance.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/Schedule.cs" />
+        <option value="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/ViewModels/ProfileModel.cs" />
+        <option value="$PROJECT_DIR$/UNI/Views/Home/Profile.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
+        <option value="$PROJECT_DIR$/UNI/Models/TeacherSubject.cs" />
+        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
       </list>
     </option>
   </component>
@@ -106,6 +111,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3003096" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -167,7 +174,7 @@
       <workItem from="1619120075214" duration="1616000" />
       <workItem from="1619122593870" duration="596000" />
       <workItem from="1619153873981" duration="9078000" />
-      <workItem from="1619177619534" duration="10903000" />
+      <workItem from="1619177619534" duration="25927000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <created>1619104791262</created>
@@ -232,7 +239,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619166508700</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added register and login">
+      <created>1619192282889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619192282889</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added authentication">
+      <created>1619192385999</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1619192385999</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +283,9 @@
     <MESSAGE value="Added 2 classes for work with db" />
     <MESSAGE value="Add dbsets for all classes from db" />
     <MESSAGE value="Added models and controller for authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added models and controller for authentication" />
+    <MESSAGE value="Added register and login" />
+    <MESSAGE value="Added authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added authentication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619108446128">
@@ -281,30 +304,94 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619191178893">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619206615389">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619191178893">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619206615389">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619191178893">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619206615389">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619191178893">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619206615389">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619191178893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1619202959182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
+    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1619202959183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1619120127611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1619120127611" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619123049495">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619192390343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619123049495" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619192390343" />
     <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1619165428164">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -317,5 +404,24 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1619162701919" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UNI/Controllers/AccountController.cs</url>
+          <line>65</line>
+          <properties documentPath="C:\Users\Abdusattar\RiderProjects\UNI\UNI\Controllers\AccountController.cs" initialLine="64">
+            <startOffsets>
+              <option value="1908" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1936" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

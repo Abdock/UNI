@@ -9,9 +9,13 @@ namespace UNI.ViewModels
         
         [Required(ErrorMessage = "Name is empty")]
         public string Name { get; set; }
+        
         [Required(ErrorMessage = "Surname is empty")]
         public string Surname { get; set; }
+        
         [Required(ErrorMessage = "Phone number is empty")]
         public string PhoneNumber { get; set; }
+
+        public string Speciality { get; set; }
     }
 }
