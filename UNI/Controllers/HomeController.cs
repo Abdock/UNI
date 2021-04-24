@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using UNI.Data;
 using UNI.Models;
+using UNI.ViewModels;
 
 namespace UNI.Controllers
 {
@@ -25,10 +26,11 @@ namespace UNI.Controllers
         {
             return View(_dbContext.teacher.ToList());
         }
-
-        public IActionResult Student()
+        
+        public IActionResult Student(LoginModel model)
         {
-            return View();
+            ViewData["db"] = _dbContext;
+            return View(model);
         }
 
         public IActionResult Privacy()

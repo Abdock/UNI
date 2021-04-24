@@ -5,7 +5,7 @@ namespace UNI.ViewModels
     public class LoginModel
     {
         [Required(ErrorMessage = "Login is empty")]
-        public int Login { get; set; }
+        public long Login { get; set; }
         
         [Required(ErrorMessage = "Password is empty")]
         [DataType(DataType.Password)]

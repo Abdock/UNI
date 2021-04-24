@@ -25,8 +25,6 @@ namespace UNI.Data
         
         public DbSet<TeacherSubject> teacher_subject { get; set; }
         
-        
-        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
@@ -34,7 +32,15 @@ namespace UNI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=allocator123;Database=UNI");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=12345;Database=UNI");
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Attendance>().HasKey(table => new {table.week, table.student_id, table.subject_id});
+            builder.Entity<Schedule>().HasKey(tb => new {tb.group_id, tb.subject_id});
+            builder.Entity<SpecialityTeacher>().HasKey(tb => new {tb.speciality_id, tb.teacher_id});
+            builder.Entity<TeacherSubject>().HasKey(tb => new {tb.subject_id, tb.teacher_id});
         }
     }
 }

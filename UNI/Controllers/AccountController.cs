@@ -27,6 +27,7 @@ namespace UNI.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            ViewData["db"] = _context;
             return View();
         }
 
@@ -40,12 +41,7 @@ namespace UNI.Controllers
                 if (user != null)
                 {
                     await Authenticate(model.Login);
-                    if (user.type == "teacher")
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
-                    
-                    return RedirectToAction("Student", "Home");
+                    return RedirectToAction(user.type == "teacher" ? "Index" : "Student", "Home", model);
                 }
                 ModelState.AddModelError("", "Something is wrong");
             }
@@ -80,11 +76,7 @@ namespace UNI.Controllers
                 }
                 await _context.SaveChangesAsync();
                 await Authenticate(_context.users.OrderByDescending(user => user.user_id).First().user_id);
-                if (model.Type == "teacher")
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-                return RedirectToAction("Student", "Home");
+                return RedirectToAction(model.Type == "teacher" ? "Index" : "Student", "Home");
             }
             ViewData["model"] = model;
             ViewData["db"] = _context;

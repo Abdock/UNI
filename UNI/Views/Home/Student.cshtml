@@ -1,7 +1,30 @@
-﻿@{
+﻿@using UNI.Data
+@using Microsoft.EntityFrameworkCore
+@model UNI.ViewModels.LoginModel
+@{
     ViewData["Title"] = "Main page";
+    var subjects = new List<Subject>();
+    var db = (ApplicationDbContext) ViewData["db"];
+    var conn = db.Database.GetDbConnection();
+    await conn.OpenAsync();
+    var cmd = conn.CreateCommand();
+    cmd.CommandText = $"SELECT * FROM student_subjects({Model.Login})";
+    var reader = await cmd.ExecuteReaderAsync();
+    while (await reader.ReadAsync())
+    {
+        subjects.Add(new Subject((long) reader[0], (string) reader[1]));
+    }
+    await reader.DisposeAsync();
 }
-
 <div>
-    
+    <ul>
+        @{
+            foreach (var subject in subjects)
+            {
+                cmd.CommandText = $"SELECT * FROM student_current_grade_of_subject({Model.Login}, {subject.subject_id})";
+                double grade = (double) await cmd.ExecuteScalarAsync();
+                <li>@subject.subject_name, current grade @grade</li>
+            }
+        }
+    </ul>
 </div>

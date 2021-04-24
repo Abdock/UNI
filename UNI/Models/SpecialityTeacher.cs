@@ -4,10 +4,8 @@ namespace UNI.Models
 {
     public class SpecialityTeacher
     {
-        [Key]
         public int speciality_id { get; set; }
         
-        [Key]
         public long teacher_id { get; set; }
 
         public SpecialityTeacher()

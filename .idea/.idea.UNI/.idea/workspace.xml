@@ -22,28 +22,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Added authentication">
-      <change afterPath="$PROJECT_DIR$/UNI/Models/Attendance.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Models/Faculty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Models/Schedule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Models/Speciality.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UNI/Models/TeacherSubject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Models/Attendance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Attendance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Models/Schedule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/Schedule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -69,7 +64,6 @@
         <option value="$PROJECT_DIR$/UNI/appsettings.json" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/subject.cs" />
-        <option value="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" />
         <option value="$PROJECT_DIR$/UNI/Pages/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Subject.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Group.cs" />
@@ -77,25 +71,28 @@
         <option value="$PROJECT_DIR$/UNI/Startup.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/User.cs" />
-        <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Student.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Teacher.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Student.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Speciality.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Faculty.cs" />
-        <option value="$PROJECT_DIR$/UNI/Models/Attendance.cs" />
-        <option value="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" />
-        <option value="$PROJECT_DIR$/UNI/Models/Schedule.cs" />
         <option value="$PROJECT_DIR$/UNI/ViewModels/RegisterModel.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Register.cshtml" />
-        <option value="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/UNI/ViewModels/ProfileModel.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Profile.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Models/TeacherSubject.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/Attendance.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/Schedule.cs" />
+        <option value="$PROJECT_DIR$/UNI/Models/SpecialityTeacher.cs" />
+        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
+        <option value="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" />
+        <option value="$PROJECT_DIR$/UNI/ViewModels/LoginModel.cs" />
+        <option value="/ce73ef36/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/database/UNI/schema/public/routine/subject_of_student@().sql" />
+        <option value="/ce73ef36/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/database/UNI/schema/public/routine/calc_grade@().sql" />
+        <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
-        <option value="$PROJECT_DIR$/UNI/Models/TeacherSubject.cs" />
-        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +171,8 @@
       <workItem from="1619120075214" duration="1616000" />
       <workItem from="1619122593870" duration="596000" />
       <workItem from="1619153873981" duration="9078000" />
-      <workItem from="1619177619534" duration="25927000" />
+      <workItem from="1619177619534" duration="25974000" />
+      <workItem from="1619244535882" duration="24845000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <created>1619104791262</created>
@@ -253,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619192385999</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Modified classes for db and added correct authentication">
+      <created>1619210534041</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619210534041</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +290,8 @@
     <MESSAGE value="Added models and controller for authentication" />
     <MESSAGE value="Added register and login" />
     <MESSAGE value="Added authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added authentication" />
+    <MESSAGE value="Modified classes for db and added correct authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified classes for db and added correct authentication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619108446128">
@@ -304,86 +310,86 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619206615389">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619254394740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619206615389">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619254394740" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619254394739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619206615389">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619254394739" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619254394739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619206615389">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619254394739" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619254394740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619206615389" />
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1619202959182">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619254394740" />
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1619251642460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619251642460" />
+    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1619251642460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1619251642460" />
+    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1619251642460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1619251642460" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1619251642460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1619251642460" />
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1619202959182">
+    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959182" />
-    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
-    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1619202959183">
+    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1619251642461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1619202959183" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1619251642461" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1619120127611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -392,34 +398,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619192390343" />
-    <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1619165428164">
+    <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1619250760080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1619165428164" />
-    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619189440322">
+    <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1619250760080" />
+    <state x="479" y="192" width="408" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1619254382437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="495" y="37" width="507" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1619189440322" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1619162701919">
+    <state x="479" y="192" width="408" height="340" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.728@0.0.1366.728" timestamp="1619254382437" />
+    <state x="374" y="86" width="667" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1619270464629">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1619162701919" />
+    <state x="374" y="86" width="667" height="547" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1619270464629" />
+    <state x="186" y="0" key="com.intellij.database.view.ui.DatabasePreviewDialog" timestamp="1619258835689">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="com.intellij.database.view.ui.DatabasePreviewDialog/0.0.1366.728@0.0.1366.728" timestamp="1619258835689" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1619267770854">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1619267770854" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UNI/Controllers/AccountController.cs</url>
-          <line>65</line>
-          <properties documentPath="C:\Users\Abdusattar\RiderProjects\UNI\UNI\Controllers\AccountController.cs" initialLine="64">
+          <url>file://$PROJECT_DIR$/UNI/Controllers/HomeController.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\Abdusattar\RiderProjects\UNI\UNI\Controllers\HomeController.cs" initialLine="36">
             <startOffsets>
-              <option value="1908" />
+              <option value="799" />
             </startOffsets>
             <endOffsets>
-              <option value="1936" />
+              <option value="800" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
