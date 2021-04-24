@@ -810,7 +810,7 @@ true posixrules
     <database id="7" parent="1" name="UNI">
       <ObjectId>57769</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>21004</IntrospectionStateNumber>
+      <IntrospectionStateNumber>21010</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|57770|57772|1
 sequence|table|57776|57778|1
@@ -888,7 +888,7 @@ sequence|table|58255|58257|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>21005</IntrospectionStateNumber>
+      <IntrospectionStateNumber>21011</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="24" parent="7" name="heap">
@@ -1012,10 +1012,10 @@ sequence|table|58255|58257|1
       <Owner>postgres</Owner>
       <StateNumber>20995</StateNumber>
     </table>
-    <table id="45" parent="23" name="event">
+    <table id="45" parent="23" name="events">
       <ObjectId>58257</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>21001</StateNumber>
+      <StateNumber>21006</StateNumber>
     </table>
     <table id="46" parent="23" name="exam">
       <ObjectId>58221</ObjectId>

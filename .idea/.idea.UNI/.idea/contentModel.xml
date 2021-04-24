@@ -21,6 +21,8 @@
         <e p="Models" t="Include">
           <e p="Attendance.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
+          <e p="Event.cs" t="Include" />
+          <e p="Exam.cs" t="Include" />
           <e p="Faculty.cs" t="Include" />
           <e p="Group.cs" t="Include" />
           <e p="Schedule.cs" t="Include" />
