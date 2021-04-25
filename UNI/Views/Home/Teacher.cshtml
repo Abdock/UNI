@@ -32,6 +32,7 @@
                             subjects.Add(new Subject {subject_id = (long) reader[0], subject_name = (string) reader[1], credits = (int) reader[2]});
                         }
                         await reader.DisposeAsync();
+                        int num = 1;
                         foreach (var subject in subjects)
                         {
                             cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 90, 100)";
@@ -44,13 +45,13 @@
                             var low = (double) await cmd.ExecuteScalarAsync();
                             <section class="ac-container">
                                 <div>
-                                    <input id="ac-1" name="accordion-1" type="checkbox" checked />
-                                    <label for="ac-1">@subject.subject_name:</label>
+                                    <input id="ac-@num" name="accordion-@num" type="checkbox" checked />
+                                    <label for="ac-@num">@subject.subject_name:</label>
                                     <article>
                                         <p>Excellent: @exc </p>
                                     </article>
-                                      <article>
-                                          <p>Good: @good</p>
+                                    <article>
+                                        <p>Good: @good</p>
                                     </article>   
                                     <article>
                                         <p>Middle: @middle</p>
@@ -61,7 +62,7 @@
                                 </div>
                  
                             </section>
-        
+                            ++num;
                         }
                     }
                 </ul>

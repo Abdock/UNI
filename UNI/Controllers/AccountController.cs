@@ -45,6 +45,7 @@ namespace UNI.Controllers
                 }
                 ModelState.AddModelError("", "Something is wrong");
             }
+            ViewData["user"] = model.Login;
             return View(model);
         }
 
@@ -84,6 +85,7 @@ namespace UNI.Controllers
             }
             ViewData["model"] = model;
             ViewData["db"] = _context;
+            ViewData["user"] = _context.users.OrderByDescending(user => user.user_id).First().user_id;
             return View();
         }
 

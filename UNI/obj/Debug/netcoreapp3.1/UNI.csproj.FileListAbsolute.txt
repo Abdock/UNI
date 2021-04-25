@@ -69,6 +69,7 @@ C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Ac
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Student.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Teacher.cshtml.g.cs
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Elective.cshtml.g.cs
 C:\Users\Тимур\RiderProjects\UNI3\UNI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Тимур\RiderProjects\UNI3\UNI\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Тимур\RiderProjects\UNI3\UNI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json

@@ -1,0 +1,54 @@
+﻿<changelist name="Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]" date="1619391643902" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 26.04.2021 05:00 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.RazorCoreGenerate.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.pdb" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.dll" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.dll" />
+    <option name="AFTER_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.Views.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.Views.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.pdb" />
+    <option name="AFTER_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" />
+    <option name="AFTER_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.Views1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" />
+    <option name="AFTER_PATH" value="UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.UNI/.idea/shelf/Uncommitted_changes_before_Update_at_26_04_2021_05_00_[Default_Changelist]/UNI.Views1.dll" />
+  </binary>
+</changelist>

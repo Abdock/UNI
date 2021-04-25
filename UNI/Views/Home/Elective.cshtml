@@ -1,0 +1,121 @@
+﻿@using UNI.Data
+@using Microsoft.EntityFrameworkCore
+@using System.Data
+@model UNI.ViewModels.ElectiveModel
+@{
+	var db = (ApplicationDbContext) ViewData["db"];
+	var conn = db.Database.GetDbConnection();
+	if (conn.State == ConnectionState.Closed)
+	{
+		await conn.OpenAsync();
+	}
+	var cmd = conn.CreateCommand();
+	cmd.CommandText = "SELECT * FROM elective";
+	var reader = await cmd.ExecuteReaderAsync();
+	List<Elective> electives = new List<Elective>();
+	while (await reader.ReadAsync())
+	{
+		electives.Add(new Elective {elective_id = (int) reader[0],
+			elective_name = (string) reader[1],
+			elective_type = (string) reader[2],
+			semesters_count = (int) reader[3],
+			credits = (int) reader[4],
+			added_date = (DateTime) reader[5],
+			description = (string) reader[6],
+			speciality_id = (int) reader[7]});
+	}
+	await reader.DisposeAsync();
+}
+
+<form asp-action="Elective" asp-controller="Home">
+	<div class="validation" asp-validation-summary="ModelOnly"></div>
+	<div>
+		<div class="form-group">
+            <label asp-for="Elective1">Long term</label>
+			<select asp-for="Elective1">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "long")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+			<label asp-for="Elective2">Short term</label>
+			<select asp-for="Elective2">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "short")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+			<label asp-for="Elective3">Short term</label>
+			<select asp-for="Elective3">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "short")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+			<label asp-for="Elective4">Long term</label>
+			<select asp-for="Elective4">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "1 semester")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+			<label asp-for="Elective5">Long term</label>
+			<select asp-for="Elective5">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "1 semester")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+			<label asp-for="Elective6">Long term</label>
+			<select asp-for="Elective6">
+				@{
+					foreach (var elective in electives)
+					{
+						if (elective.elective_type == "1 semester")
+						{
+							<option value="@elective.elective_id">@elective.elective_name</option>
+						}
+					}
+				}
+			</select>
+		</div>
+		<div class="form-group">
+        	<input type="submit" value="Send" class="btn btn-outline-dark" />
+        </div>
+	</div>
+</form>

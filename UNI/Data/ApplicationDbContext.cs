@@ -37,6 +37,10 @@ namespace UNI.Data
         
         public DbSet<SemetersDate> semesters_date { get; set; }
         
+        public DbSet<Elective> elective { get; set; }
+        
+        public DbSet<StudentElective> student_elective { get; set; }
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
@@ -44,7 +48,7 @@ namespace UNI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=merekeev.99;Database=UNI");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=12345;Database=UNI");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
