@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace UNI.DBClasses
+namespace UNI.Models
 {
     public class Teacher
     {

@@ -7,16 +7,19 @@ namespace UNI.Models
         [Key]
         public long subject_id { get; set; }
         public string subject_name { get; set; }
+        
+        public int credits { get; set; }
 
         public Subject()
         {
             
         }
 
-        public Subject(long subjectId, string subjectName)
+        public Subject(long subjectId, string subjectName, int credits)
         {
             subject_id = subjectId;
             subject_name = subjectName;
+            this.credits = credits;
         }
     }
 }

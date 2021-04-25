@@ -131,9 +131,9 @@ ALTER FUNCTION public.current_week(st bigint) OWNER TO postgres;
 CREATE FUNCTION public.forecast_for_student_of_subject(us bigint, sub bigint) RETURNS double precision
     LANGUAGE sql
     AS $$
-        SELECT AVG(grade) * AVG(weight) * (14 - MAX(week)) FROM attendance a JOIN users u
+SELECT AVG(grade) * (1 - SUM(weight)) * (14 - MAX(week)) FROM attendance a JOIN users u
         ON u.user_id = us AND u.second_id = a.student_id AND a.subject_id = sub
-    $$;
+$$;
 
 
 ALTER FUNCTION public.forecast_for_student_of_subject(us bigint, sub bigint) OWNER TO postgres;
@@ -169,6 +169,66 @@ CREATE FUNCTION public.get_current_attendance(us bigint, sub bigint) RETURNS dou
 
 
 ALTER FUNCTION public.get_current_attendance(us bigint, sub bigint) OWNER TO postgres;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: group; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."group" (
+    group_id bigint NOT NULL,
+    group_name character varying(30) NOT NULL,
+    curator_id bigint NOT NULL
+);
+
+
+ALTER TABLE public."group" OWNER TO postgres;
+
+--
+-- Name: get_teachers_group(bigint); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.get_teachers_group(uid bigint) RETURNS SETOF public."group"
+    LANGUAGE sql
+    AS $$
+        select g.* from "group" g 
+            join teacher t on g.curator_id = t.teacher_id
+            join users u on u.second_id = t.teacher_id and u.user_id = uid;
+    $$;
+
+
+ALTER FUNCTION public.get_teachers_group(uid bigint) OWNER TO postgres;
+
+--
+-- Name: subject; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.subject (
+    subject_id bigint NOT NULL,
+    subject_name character varying NOT NULL,
+    credits integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE public.subject OWNER TO postgres;
+
+--
+-- Name: group_subjects(bigint); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.group_subjects(gid bigint) RETURNS SETOF public.subject
+    LANGUAGE sql
+    AS $$
+        select s2.* from "group" g 
+            join schedule s on g.group_id = s.group_id and g.group_id = gid
+            join subject s2 on s.subject_id = s2.subject_id
+    $$;
+
+
+ALTER FUNCTION public.group_subjects(gid bigint) OWNER TO postgres;
 
 --
 -- Name: is_second_semester(bigint); Type: FUNCTION; Schema: public; Owner: postgres
@@ -290,10 +350,6 @@ CREATE FUNCTION public.student_current_grade_of_subject(users_id bigint, lesson_
 
 ALTER FUNCTION public.student_current_grade_of_subject(users_id bigint, lesson_id bigint) OWNER TO postgres;
 
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
 --
 -- Name: attendance; Type: TABLE; Schema: public; Owner: postgres
 --
@@ -325,19 +381,6 @@ CREATE FUNCTION public.student_grades_of_subject(users_id bigint, lesson_id bigi
 
 
 ALTER FUNCTION public.student_grades_of_subject(users_id bigint, lesson_id bigint) OWNER TO postgres;
-
---
--- Name: subject; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.subject (
-    subject_id bigint NOT NULL,
-    subject_name character varying NOT NULL,
-    credits integer DEFAULT 0 NOT NULL
-);
-
-
-ALTER TABLE public.subject OWNER TO postgres;
 
 --
 -- Name: student_subjects(bigint); Type: FUNCTION; Schema: public; Owner: postgres
@@ -520,19 +563,6 @@ ALTER TABLE public.faculty ALTER COLUMN faculty_id ADD GENERATED ALWAYS AS IDENT
     CACHE 1
 );
 
-
---
--- Name: group; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public."group" (
-    group_id bigint NOT NULL,
-    group_name character varying(30) NOT NULL,
-    curator_id bigint NOT NULL
-);
-
-
-ALTER TABLE public."group" OWNER TO postgres;
 
 --
 -- Name: group_group_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -913,6 +943,7 @@ INSERT INTO public.speciality_teacher (specilaity_id, teacher_id) VALUES (1, 7);
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (6, 'Тимур', 'Мерекеев', '8 778 777 77 77', '2021-04-23', 1, 1, 1, 1, 1);
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (7, 'Ержигит', 'Мырзабаев', '8 778 946 34 67', '2021-04-23', 1, 2, 1, 1, 1);
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (5, 'Абдусаттар', 'Касымбеков', '8 707 898 98 32', '0001-01-01', 1, 1, 0, 2, 1);
+INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (10, 'Мирас', 'Сагатов', '8 702 366 78 81', '2021-04-25', 1, 1, 1, 1, 1);
 
 
 --
@@ -972,6 +1003,7 @@ INSERT INTO public.users (user_id, password, type, second_id) VALUES (14, 'Passw
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (15, 'Password123', 'student', 5);
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (16, 'Password123', 'student', 6);
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (17, 'Password123', 'student', 7);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (18, 'Password123', 'student', 0);
 
 
 --
@@ -1013,7 +1045,7 @@ SELECT pg_catalog.setval('public.speciality_speciality_id_seq', 3, true);
 -- Name: student_student_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.student_student_id_seq', 7, true);
+SELECT pg_catalog.setval('public.student_student_id_seq', 10, true);
 
 
 --
@@ -1034,7 +1066,7 @@ SELECT pg_catalog.setval('public.teacher_teacher_id_seq', 8, true);
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 17, true);
+SELECT pg_catalog.setval('public.users_user_id_seq', 18, true);
 
 
 --

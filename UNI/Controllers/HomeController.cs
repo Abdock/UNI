@@ -24,10 +24,17 @@ namespace UNI.Controllers
 
         public IActionResult Index()
         {
+            ViewData["db"] = _dbContext;
             return View(_dbContext.teacher.ToList());
         }
         
         public IActionResult Student(LoginModel model)
+        {
+            ViewData["db"] = _dbContext;
+            return View(model);
+        }
+
+        public IActionResult Teacher(LoginModel model)
         {
             ViewData["db"] = _dbContext;
             return View(model);

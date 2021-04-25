@@ -68,3 +68,4 @@ C:\Users\Abdusattar\RiderProjects\UNI\UNI\bin\Debug\netcoreapp3.1\runtimes\win\l
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Student.cshtml.g.cs
+C:\Users\Abdusattar\RiderProjects\UNI\UNI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Teacher.cshtml.g.cs

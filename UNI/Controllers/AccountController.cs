@@ -41,7 +41,7 @@ namespace UNI.Controllers
                 if (user != null)
                 {
                     await Authenticate(model.Login);
-                    return RedirectToAction(user.type == "teacher" ? "Index" : "Student", "Home", model);
+                    return RedirectToAction(user.type == "teacher" ? "Teacher" : "Student", "Home", model);
                 }
                 ModelState.AddModelError("", "Something is wrong");
             }
@@ -80,7 +80,7 @@ namespace UNI.Controllers
                 }
                 await _context.SaveChangesAsync();
                 await Authenticate(_context.users.OrderByDescending(user => user.user_id).First().user_id);
-                return RedirectToAction(model.Type == "teacher" ? "Index" : "Student", "Home");
+                return RedirectToAction(model.Type == "teacher" ? "Teacher" : "Student", "Home");
             }
             ViewData["model"] = model;
             ViewData["db"] = _context;
@@ -95,6 +95,12 @@ namespace UNI.Controllers
             };
             ClaimsIdentity identity = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+        }
+
+        private async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Account");
         }
     }
 }

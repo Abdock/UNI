@@ -12,7 +12,7 @@
     var reader = await cmd.ExecuteReaderAsync();
     while (await reader.ReadAsync())
     {
-        subjects.Add(new Subject((long) reader[0], (string) reader[1]));
+        subjects.Add(new Subject((long) reader[0], (string) reader[1], (int) reader[2]));
     }
     await reader.DisposeAsync();
 }

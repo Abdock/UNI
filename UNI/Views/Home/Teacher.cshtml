@@ -1,0 +1,60 @@
+﻿@using UNI.Data
+@using Microsoft.EntityFrameworkCore
+@model UNI.ViewModels.LoginModel;
+@{
+    ViewData["Title"] = "Teacher page";
+    var groups = new List<Group>();
+    var db = (ApplicationDbContext) ViewData["db"];
+    var conn = db.Database.GetDbConnection();
+    await conn.OpenAsync();
+    var cmd = conn.CreateCommand();
+    cmd.CommandText = $"SELECT * FROM get_teachers_group({Model.Login})";
+    var reader = await cmd.ExecuteReaderAsync();
+    while (await reader.ReadAsync())
+    {
+        groups.Add(new Group {group_id = (long) reader[0], group_name = (string) reader[1], curator_id = (long) reader[2]});
+    }
+    await reader.DisposeAsync();
+}
+<ul>
+    @{
+        foreach (var group in groups)
+        {
+            <li>
+                @group.group_name
+                <ul>
+                    @{
+                        cmd.CommandText = $"SELECT * FROM group_subjects({group.group_id})";
+                        List<Subject> subjects = new List<Subject>();
+                        reader = await cmd.ExecuteReaderAsync();
+                        while (await reader.ReadAsync())
+                        {
+                            subjects.Add(new Subject {subject_id = (long) reader[0], subject_name = (string) reader[1], credits = (int) reader[2]});
+                        }
+                        await reader.DisposeAsync();
+                        foreach (var subject in subjects)
+                        {
+                            cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 90, 100)";
+                            var exc = (double) await cmd.ExecuteScalarAsync();
+                            cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 70, 89)";
+                            var good = (double) await cmd.ExecuteScalarAsync();
+                            cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 50, 69)";
+                            var middle = (double) await cmd.ExecuteScalarAsync();
+                            cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 0, 50)";
+                            var low = (double) await cmd.ExecuteScalarAsync();
+                            <li>
+                                @subject.subject_name:
+                                <ul>
+                                    <li>Excellent: @exc</li>
+                                    <li>Good: @good</li>
+                                    <li>Middle: @middle</li>
+                                    <li>Low: @low</li>
+                                </ul>
+                            </li>
+                        }
+                    }
+                </ul>
+            </li>
+        }
+    }
+</ul>
