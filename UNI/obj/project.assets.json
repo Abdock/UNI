@@ -1634,19 +1634,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abdusattar\\.nuget\\packages\\": {}
+    "C:\\Users\\Тимур\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abdusattar\\RiderProjects\\UNI\\UNI\\UNI.csproj",
+      "projectUniqueName": "C:\\Users\\Тимур\\RiderProjects\\UNI3\\UNI\\UNI.csproj",
       "projectName": "UNI",
-      "projectPath": "C:\\Users\\Abdusattar\\RiderProjects\\UNI\\UNI\\UNI.csproj",
-      "packagesPath": "C:\\Users\\Abdusattar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abdusattar\\RiderProjects\\UNI\\UNI\\obj\\",
+      "projectPath": "C:\\Users\\Тимур\\RiderProjects\\UNI3\\UNI\\UNI.csproj",
+      "packagesPath": "C:\\Users\\Тимур\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Тимур\\RiderProjects\\UNI3\\UNI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Abdusattar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Тимур\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1697,7 +1697,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

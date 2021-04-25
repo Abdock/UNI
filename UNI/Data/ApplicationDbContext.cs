@@ -44,7 +44,7 @@ namespace UNI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5500;Username=postgres;Password=12345;Database=UNI");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=merekeev.99;Database=UNI");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

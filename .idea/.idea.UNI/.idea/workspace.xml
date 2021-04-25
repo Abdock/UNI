@@ -23,20 +23,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19e221ca-b503-447d-b9d3-47ed350dae28" name="Default Changelist" comment="Added new functions to db and insert new data to db">
-      <change afterPath="$PROJECT_DIR$/UNI/Views/Home/News.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/News.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/dataSources/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/storage_v2/_src_/database/UNI.0EgBAA/schema/public.abK9xQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UNI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/News.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/News.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/Views/Home/Teacher.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Home/Teacher.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/bin/Debug/netcoreapp3.1/UNI.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Account/Register.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Student.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Teacher.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Home/Teacher.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/Debug/netcoreapp3.1/UNI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/UNI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UNI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UNI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +89,6 @@
         <option value="$PROJECT_DIR$/UNI/Models/Group.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Startup.cs" />
-        <option value="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/User.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Account/Student.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Models/Speciality.cs" />
@@ -85,20 +112,21 @@
         <option value="$PROJECT_DIR$/UNI/Models/EndtermResult.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/SemetersDate.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/LevelTest.cs" />
-        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Student.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Teacher.cs" />
         <option value="/ce73ef36/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/database/UNI/schema/public/routine/forecast_for_student_of_subject@(bigint,bigint).sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b79e1a1-39e3-4d8f-b102-25d645ade6c4/console.sql" />
         <option value="$PROJECT_DIR$/UNI/Controllers/AccountController.cs" />
         <option value="$PROJECT_DIR$/UNI/Models/Subject.cs" />
-        <option value="$PROJECT_DIR$/UNI/Views/Home/Teacher.cshtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/console.sql" />
         <option value="/ce73ef36/4c23c8c3-d9dc-4c4d-a9c8-c407c68de300/database/UNI/schema/public/routine/forecast_for_student_of_subject@(bigint,bigint).sql" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/Student.cshtml" />
         <option value="$PROJECT_DIR$/UNI/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/UNI/Views/Home/News.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Views/Account/Login.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/UNI/Views/Home/Teacher.cshtml" />
       </list>
     </option>
   </component>
@@ -183,6 +211,7 @@
       <workItem from="1619281189081" duration="22361000" />
       <workItem from="1619339506639" duration="5202000" />
       <workItem from="1619346307670" duration="24294000" />
+      <workItem from="1619381021021" duration="8136000" />
     </task>
     <task id="LOCAL-00001" summary="Created project">
       <created>1619104791262</created>
@@ -376,22 +405,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="72" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619104734167" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1619379739230">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1619390720629">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619379739230" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1619379739229">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619390720629" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1619390720629">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619379739229" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1619379739229">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619390720629" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1619390720629">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619379739229" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1619379739229">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619390720629" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1619390720629">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619379739229" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619390720629" />
     <state width="1323" height="305" key="GridCell.Tab.1.bottom" timestamp="1619339384349">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -472,10 +505,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="VCS.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1619340556999" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619370829231">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2" timestamp="1619391160762">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619370829231" />
+    <state x="309" y="110" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619391160762" />
     <state x="558" y="256" width="316" height="255" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1619327082137">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

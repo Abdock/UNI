@@ -20,7 +20,7 @@
     @{
         foreach (var group in groups)
         {
-            <li>
+            
                 @group.group_name
                 <ul>
                     @{
@@ -42,19 +42,30 @@
                             var middle = (double) await cmd.ExecuteScalarAsync();
                             cmd.CommandText = $"SELECT * FROM ratio_of_student_in_group({group.group_id}, {subject.subject_id}, 0, 50)";
                             var low = (double) await cmd.ExecuteScalarAsync();
-                            <li>
-                                @subject.subject_name:
-                                <ul>
-                                    <li>Excellent: @exc</li>
-                                    <li>Good: @good</li>
-                                    <li>Middle: @middle</li>
-                                    <li>Low: @low</li>
-                                </ul>
-                            </li>
+                            <section class="ac-container">
+                                <div>
+                                    <input id="ac-1" name="accordion-1" type="checkbox" checked />
+                                    <label for="ac-1">@subject.subject_name:</label>
+                                    <article>
+                                        <p>Excellent: @exc </p>
+                                    </article>
+                                      <article>
+                                          <p>Good: @good</p>
+                                    </article>   
+                                    <article>
+                                        <p>Middle: @middle</p>
+                                    </article>
+                                    <article>
+                                        <p>Low: @low</p>
+                                    </article>
+                                </div>
+                 
+                            </section>
+        
                         }
                     }
                 </ul>
-            </li>
+            
         }
     }
 </ul>

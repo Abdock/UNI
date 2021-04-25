@@ -1,24 +1,56 @@
-﻿@model UNI.ViewModels.LoginModel
+﻿@*
+@model UNI.ViewModels.LoginModel
+<div style="text-align: center">
+    <h2>Вход на сайт</h2>
  
-<h2>Вход на сайт</h2>
+    <a asp-action="Register" asp-controller="Account">Регистрация</a>
  
-<a asp-action="Register" asp-controller="Account">Регистрация</a>
- 
-<form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
-    <div class="validation" asp-validation-summary="ModelOnly"></div>
-    <div>
-        <div class="form-group">
-            <label asp-for="Login">Введите Email</label>
-            <input type="text" asp-for="Login" />
-            <span asp-validation-for="Login" />
+    <form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+        <div class="validation" asp-validation-summary="ModelOnly"></div>
+        <div>
+            <div class="form-group">
+                <label asp-for="Login">Введите Email</label>
+                <input type="text" asp-for="Login" />
+                <span asp-validation-for="Login" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Password">Введите пароль</label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти" class="btn btn-outline-dark" />
+            </div>
         </div>
-        <div class="form-group">
-            <label asp-for="Password">Введите пароль</label>
-            <input asp-for="Password" />
-            <span asp-validation-for="Password" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Войти" class="btn btn-outline-dark" />
-        </div>
+    </form></div>
+    *@
+    @model UNI.ViewModels.LoginModel
+<main class="login-block" style="margin-left: 30%; margin-top: 10%" > 
+    <div  >
+        
+        <h1>Введите свои данные</h1>
+        <form asp-action="Login" asp-controller="Account" asp-anti-forgery="true" >
+            <div class="validation" asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user ti-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Ваш логин" asp-for="Login">
+                </div>
+            </div>
+
+            <hr class="hr-xs">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
+                    <input type="password" class="form-control" placeholder="Ваш суперпароль" asp-for="Password">
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">ВОЙТИ НА САЙТ</button>
+
+        </form>
     </div>
-</form>
+    
+ 
+</main>
