@@ -27,4 +27,23 @@
             }
         }
     </ul>
+    @{
+        cmd.CommandText = "SELECT * FROM events";
+        List<Event> events = new List<Event>();
+        reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            events.Add(new Event {event_id = (long) reader[0], event_icon = (string) reader[1], event_date = (DateTime) reader[2], title = (string) reader[3], description = (string) reader[4]});
+        }
+        foreach (var e in events)
+        {
+            <div class="border-top">
+                <span class="h3 d-block">@e.title: @e.event_date.ToString("yyyy-MM-dd")</span>
+                <img src="@Url.Content("icons/event.png")" />
+                <span class="font-weight-bold">
+                    @e.description
+                </span>
+            </div>
+        }
+    }
 </div>

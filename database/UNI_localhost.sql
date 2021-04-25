@@ -175,6 +175,42 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- Name: student; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.student (
+    student_id bigint NOT NULL,
+    student_name character varying(50) NOT NULL,
+    student_surname character varying(50) NOT NULL,
+    phone_number character varying(20) NOT NULL,
+    enrollment_date date DEFAULT CURRENT_DATE NOT NULL,
+    speciality_id integer NOT NULL,
+    group_id bigint,
+    course smallint DEFAULT 1 NOT NULL,
+    english_skill integer DEFAULT 1 NOT NULL,
+    semester_id bigint DEFAULT 1 NOT NULL
+);
+
+
+ALTER TABLE public.student OWNER TO postgres;
+
+--
+-- Name: get_students_in_retake_of_group(bigint, bigint); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.get_students_in_retake_of_group(gid bigint, sid bigint) RETURNS SETOF public.student
+    LANGUAGE sql
+    AS $$
+        select s.* from student s 
+            join "group" g on s.group_id = g.group_id and g.group_id = gid
+            join schedule s2 on g.group_id = s2.group_id and s2.subject_id = sid
+            join exam e on e.subject_id = s2.subject_id and e.student_id = s.student_id and e.final < 50;
+    $$;
+
+
+ALTER FUNCTION public.get_students_in_retake_of_group(gid bigint, sid bigint) OWNER TO postgres;
+
+--
 -- Name: group; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -400,26 +436,6 @@ CREATE FUNCTION public.student_subjects(users_id bigint) RETURNS SETOF public.su
 ALTER FUNCTION public.student_subjects(users_id bigint) OWNER TO postgres;
 
 --
--- Name: student; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.student (
-    student_id bigint NOT NULL,
-    student_name character varying(50) NOT NULL,
-    student_surname character varying(50) NOT NULL,
-    phone_number character varying(20) NOT NULL,
-    enrollment_date date DEFAULT CURRENT_DATE NOT NULL,
-    speciality_id integer NOT NULL,
-    group_id bigint,
-    course smallint DEFAULT 1 NOT NULL,
-    english_skill integer DEFAULT 1 NOT NULL,
-    semester_id bigint DEFAULT 1 NOT NULL
-);
-
-
-ALTER TABLE public.student OWNER TO postgres;
-
---
 -- Name: students_of_group(bigint); Type: FUNCTION; Schema: public; Owner: postgres
 --
 
@@ -471,6 +487,46 @@ $$;
 ALTER FUNCTION public.subject_of_student() OWNER TO postgres;
 
 --
+-- Name: elective; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.elective (
+    elective_id integer NOT NULL,
+    elective_name character varying(200) NOT NULL,
+    elective_type character varying(100) NOT NULL,
+    semesters_count integer NOT NULL,
+    credits integer NOT NULL,
+    added_date date DEFAULT CURRENT_DATE NOT NULL,
+    description text,
+    speciality_id integer NOT NULL
+);
+
+
+ALTER TABLE public.elective OWNER TO postgres;
+
+--
+-- Name: elective_elective_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.elective_elective_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.elective_elective_id_seq OWNER TO postgres;
+
+--
+-- Name: elective_elective_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.elective_elective_id_seq OWNED BY public.elective.elective_id;
+
+
+--
 -- Name: endterm_result; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -492,7 +548,7 @@ ALTER TABLE public.endterm_result OWNER TO postgres;
 
 CREATE TABLE public.events (
     event_id bigint NOT NULL,
-    event_icon character varying(300) DEFAULT 'https://www.flaticon.com/svg/vstatic/svg/2983/2983719.svg?token=exp=1619271065~hmac=e4077eed42b8004e6c898075f0b3b6ec'::character varying NOT NULL,
+    event_icon character varying(300) DEFAULT '../../../event.png'::character varying NOT NULL,
     event_date date NOT NULL,
     title character varying(200) NOT NULL,
     description text NOT NULL
@@ -696,6 +752,44 @@ CREATE TABLE public.speciality_teacher (
 ALTER TABLE public.speciality_teacher OWNER TO postgres;
 
 --
+-- Name: student_elective; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.student_elective (
+    student_id bigint NOT NULL,
+    elective1 integer NOT NULL,
+    elective2 integer NOT NULL,
+    elective3 integer NOT NULL,
+    elective4 integer NOT NULL,
+    elective5 integer NOT NULL,
+    elective6 integer NOT NULL
+);
+
+
+ALTER TABLE public.student_elective OWNER TO postgres;
+
+--
+-- Name: student_elective_student_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.student_elective_student_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.student_elective_student_id_seq OWNER TO postgres;
+
+--
+-- Name: student_elective_student_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.student_elective_student_id_seq OWNED BY public.student_elective.student_id;
+
+
+--
 -- Name: student_student_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -800,6 +894,13 @@ ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
 
 
 --
+-- Name: elective elective_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.elective ALTER COLUMN elective_id SET DEFAULT nextval('public.elective_elective_id_seq'::regclass);
+
+
+--
 -- Name: events event_id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -811,6 +912,13 @@ ALTER TABLE ONLY public.events ALTER COLUMN event_id SET DEFAULT nextval('public
 --
 
 ALTER TABLE ONLY public.semesters_date ALTER COLUMN semester_id SET DEFAULT nextval('public.semesters_date_semester_id_seq'::regclass);
+
+
+--
+-- Name: student_elective student_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective ALTER COLUMN student_id SET DEFAULT nextval('public.student_elective_student_id_seq'::regclass);
 
 
 --
@@ -845,6 +953,15 @@ INSERT INTO public.attendance (week, student_id, subject_id, grade, weight, home
 
 
 --
+-- Data for Name: elective; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (1, 'ACM', 'short', 3, 5, '2021-04-25', 'Training olympic programming', 1);
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (2, 'GameDev', 'short', 3, 6, '2021-04-25', 'Learning to modelling', 1);
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (3, 'Big Data', 'long', 4, 10, '2021-04-25', 'Learn analyze data and modeling AI', 1);
+
+
+--
 -- Data for Name: endterm_result; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -854,6 +971,7 @@ INSERT INTO public.attendance (week, student_id, subject_id, grade, weight, home
 -- Data for Name: events; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.events (event_id, event_icon, event_date, title, description) VALUES (1, '../../../icons/event.png', '2021-04-27', 'Выбор элективов', 'Время выбирать свое будущее, и мы вам предоставляем на выбор список элективов, ссылка на канал будет прикреплена позже');
 
 
 --
@@ -947,6 +1065,12 @@ INSERT INTO public.student (student_id, student_name, student_surname, phone_num
 
 
 --
+-- Data for Name: student_elective; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
 -- Data for Name: subject; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -1007,10 +1131,17 @@ INSERT INTO public.users (user_id, password, type, second_id) VALUES (18, 'Passw
 
 
 --
+-- Name: elective_elective_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.elective_elective_id_seq', 3, true);
+
+
+--
 -- Name: event_event_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.event_event_id_seq', 1, false);
+SELECT pg_catalog.setval('public.event_event_id_seq', 1, true);
 
 
 --
@@ -1039,6 +1170,13 @@ SELECT pg_catalog.setval('public.semesters_date_semester_id_seq', 1, true);
 --
 
 SELECT pg_catalog.setval('public.speciality_speciality_id_seq', 3, true);
+
+
+--
+-- Name: student_elective_student_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.student_elective_student_id_seq', 1, false);
 
 
 --
@@ -1075,6 +1213,14 @@ SELECT pg_catalog.setval('public.users_user_id_seq', 18, true);
 
 ALTER TABLE ONLY public.attendance
     ADD CONSTRAINT attendance_pk PRIMARY KEY (subject_id, student_id, week);
+
+
+--
+-- Name: elective elective_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.elective
+    ADD CONSTRAINT elective_pk PRIMARY KEY (elective_id);
 
 
 --
@@ -1166,6 +1312,14 @@ ALTER TABLE ONLY public.speciality_teacher
 
 
 --
+-- Name: student_elective student_elective_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective_pk PRIMARY KEY (student_id);
+
+
+--
 -- Name: student student_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1210,6 +1364,13 @@ ALTER TABLE ONLY public.users
 --
 
 CREATE UNIQUE INDEX attendance_week_idx ON public.attendance USING btree (week, student_id, subject_id);
+
+
+--
+-- Name: elective_elective_id_uindex; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX elective_elective_id_uindex ON public.elective USING btree (elective_id);
 
 
 --
@@ -1266,6 +1427,13 @@ CREATE UNIQUE INDEX speciality_speciality_id_idx ON public.speciality USING btre
 --
 
 CREATE UNIQUE INDEX speciality_teacher_specilaity_id_idx ON public.speciality_teacher USING btree (specilaity_id, teacher_id);
+
+
+--
+-- Name: student_elective_student_id_uindex; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX student_elective_student_id_uindex ON public.student_elective USING btree (student_id);
 
 
 --
@@ -1345,6 +1513,14 @@ ALTER TABLE ONLY public.attendance
 
 ALTER TABLE ONLY public.attendance
     ADD CONSTRAINT attendance_fk_1 FOREIGN KEY (subject_id) REFERENCES public.subject(subject_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+
+
+--
+-- Name: elective elective_speciality_speciality_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.elective
+    ADD CONSTRAINT elective_speciality_speciality_id_fk FOREIGN KEY (speciality_id) REFERENCES public.speciality(speciality_id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
@@ -1449,6 +1625,54 @@ ALTER TABLE ONLY public.speciality_teacher
 
 ALTER TABLE ONLY public.speciality_teacher
     ADD CONSTRAINT speciality_teacher_fk_1 FOREIGN KEY (teacher_id) REFERENCES public.teacher(teacher_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective___fk_1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective___fk_1 FOREIGN KEY (elective2) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective___fk_2; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective___fk_2 FOREIGN KEY (elective3) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective___fk_3; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective___fk_3 FOREIGN KEY (elective4) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective___fk_4; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective___fk_4 FOREIGN KEY (elective5) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective___fk_5; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective___fk_5 FOREIGN KEY (elective6) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: student_elective student_elective_elective_elective_id_fk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.student_elective
+    ADD CONSTRAINT student_elective_elective_elective_id_fk FOREIGN KEY (elective1) REFERENCES public.elective(elective_id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 --
