@@ -65,6 +65,7 @@
           </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="News.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
             <e p="Student.cshtml" t="Include" />
             <e p="Teacher.cshtml" t="Include" />

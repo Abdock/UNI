@@ -810,7 +810,7 @@ true posixrules
     <database id="7" parent="1" name="UNI">
       <ObjectId>57769</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>21195</IntrospectionStateNumber>
+      <IntrospectionStateNumber>21199</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|57770|57772|1
 sequence|table|57776|57778|1
@@ -891,7 +891,7 @@ sequence|table|58387|58389|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>21196</IntrospectionStateNumber>
+      <IntrospectionStateNumber>21200</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="24" parent="7" name="heap">
@@ -1161,8 +1161,8 @@ sequence|table|58387|58389|1
     <routine id="69" parent="23" name="forecast_for_student_of_subject">
       <ObjectId>58245</ObjectId>
       <Owner>postgres</Owner>
-      <SourceTextLength>169</SourceTextLength>
-      <StateNumber>21156</StateNumber>
+      <SourceTextLength>150</SourceTextLength>
+      <StateNumber>21198</StateNumber>
       <VolatilityKind>volatile</VolatilityKind>
       <ArgumentsDefinition>us bigint, sub bigint</ArgumentsDefinition>
       <ResultsDefinition>double precision</ResultsDefinition>

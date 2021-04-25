@@ -1,5 +1,6 @@
-﻿@using UNI.Data
+﻿﻿@using UNI.Data
 @using Microsoft.EntityFrameworkCore
+@using UNI.Data
 @model UNI.ViewModels.LoginModel
 @{
     ViewData["Title"] = "Main page";
@@ -23,7 +24,9 @@
             {
                 cmd.CommandText = $"SELECT * FROM student_current_grade_of_subject({Model.Login}, {subject.subject_id})";
                 double grade = (double) await cmd.ExecuteScalarAsync();
-                <li>@subject.subject_name, current grade @grade</li>
+                cmd.CommandText = $"SELECT * FROM forecast_for_student_of_subject({Model.Login}, {subject.subject_id})";
+                double forecast = (double) await cmd.ExecuteScalarAsync();
+                <li>@subject.subject_name, current grade @grade, forecast grade @(grade + forecast)</li>
             }
         }
     </ul>
