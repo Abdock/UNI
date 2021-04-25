@@ -131,7 +131,7 @@ ALTER FUNCTION public.current_week(st bigint) OWNER TO postgres;
 CREATE FUNCTION public.forecast_for_student_of_subject(us bigint, sub bigint) RETURNS double precision
     LANGUAGE sql
     AS $$
-SELECT AVG(grade) * (1 - SUM(weight)) * (14 - MAX(week)) FROM attendance a JOIN users u
+SELECT AVG(grade) * (1 - SUM(weight)) FROM attendance a JOIN users u
         ON u.user_id = us AND u.second_id = a.student_id AND a.subject_id = sub
 $$;
 
@@ -873,27 +873,6 @@ CREATE TABLE public.users (
 ALTER TABLE public.users OWNER TO postgres;
 
 --
--- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
---
-
-CREATE SEQUENCE public.users_user_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.users_user_id_seq OWNER TO postgres;
-
---
--- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
---
-
-ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
-
-
---
 -- Name: elective elective_id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -919,13 +898,6 @@ ALTER TABLE ONLY public.semesters_date ALTER COLUMN semester_id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.student_elective ALTER COLUMN student_id SET DEFAULT nextval('public.student_elective_student_id_seq'::regclass);
-
-
---
--- Name: users user_id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.users_user_id_seq'::regclass);
 
 
 --
@@ -959,6 +931,9 @@ INSERT INTO public.attendance (week, student_id, subject_id, grade, weight, home
 INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (1, 'ACM', 'short', 3, 5, '2021-04-25', 'Training olympic programming', 1);
 INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (2, 'GameDev', 'short', 3, 6, '2021-04-25', 'Learning to modelling', 1);
 INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (3, 'Big Data', 'long', 4, 10, '2021-04-25', 'Learn analyze data and modeling AI', 1);
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (4, '1C', '1 semester', 1, 3, '2021-04-25', 'Learn 1C', 1);
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (5, 'R', '1 semester', 1, 4, '2021-04-25', 'Learn how work with R', 1);
+INSERT INTO public.elective (elective_id, elective_name, elective_type, semesters_count, credits, added_date, description, speciality_id) VALUES (6, 'Parallel Programming', '1 semester', 1, 4, '2021-04-25', 'Learn how divide task to threads', 1);
 
 
 --
@@ -1068,6 +1043,7 @@ INSERT INTO public.student (student_id, student_name, student_surname, phone_num
 -- Data for Name: student_elective; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public.student_elective (student_id, elective1, elective2, elective3, elective4, elective5, elective6) VALUES (5, 3, 1, 2, 6, 5, 4);
 
 
 --
@@ -1127,14 +1103,13 @@ INSERT INTO public.users (user_id, password, type, second_id) VALUES (14, 'Passw
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (15, 'Password123', 'student', 5);
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (16, 'Password123', 'student', 6);
 INSERT INTO public.users (user_id, password, type, second_id) VALUES (17, 'Password123', 'student', 7);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (18, 'Password123', 'student', 0);
 
 
 --
 -- Name: elective_elective_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.elective_elective_id_seq', 3, true);
+SELECT pg_catalog.setval('public.elective_elective_id_seq', 6, true);
 
 
 --
@@ -1198,13 +1173,6 @@ SELECT pg_catalog.setval('public.subject_subject_id_seq', 4, true);
 --
 
 SELECT pg_catalog.setval('public.teacher_teacher_id_seq', 8, true);
-
-
---
--- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.users_user_id_seq', 18, true);
 
 
 --
@@ -1352,14 +1320,6 @@ ALTER TABLE ONLY public.teacher_subject
 
 
 --
--- Name: users users_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_pk PRIMARY KEY (user_id);
-
-
---
 -- Name: attendance_week_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1462,13 +1422,6 @@ CREATE UNIQUE INDEX teacher_subject_teacher_id_idx ON public.teacher_subject USI
 --
 
 CREATE UNIQUE INDEX teacher_teacher_id_idx ON public.teacher USING btree (teacher_id);
-
-
---
--- Name: users_user_id_uindex; Type: INDEX; Schema: public; Owner: postgres
---
-
-CREATE UNIQUE INDEX users_user_id_uindex ON public.users USING btree (user_id);
 
 
 --
