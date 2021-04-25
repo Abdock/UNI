@@ -9,7 +9,7 @@ namespace UNI.DBClasses
         public long teacher_id { get; set; }
         public string teacher_name { get; set; }
         public string teacher_surname { get; set; }
-        public DateTime employment_date { get; set; }
+        public DateTime employment_date { get; set; } = DateTime.Today;
         
         public string phone_number { get; set; }
 
