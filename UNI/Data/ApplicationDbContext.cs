@@ -29,6 +29,14 @@ namespace UNI.Data
         
         public DbSet<Exam> exam { get; set; }
         
+        public DbSet<LevelTest> level_test_result { get; set; }
+        
+        public DbSet<MidtermResult> midterm_result { get; set; }
+        
+        public DbSet<EndtermResult> endterm_result { get; set; }
+        
+        public DbSet<SemetersDate> semesters_date { get; set; }
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
@@ -46,6 +54,8 @@ namespace UNI.Data
             builder.Entity<SpecialityTeacher>().HasKey(tb => new {tb.speciality_id, tb.teacher_id});
             builder.Entity<TeacherSubject>().HasKey(tb => new {tb.subject_id, tb.teacher_id});
             builder.Entity<Exam>().HasKey(tb => new {tb.subject_id, tb.student_id});
+            builder.Entity<EndtermResult>().HasKey(tb => new {tb.group_id, tb.subject_id});
+            builder.Entity<MidtermResult>().HasKey(tb => new {tb.group_id, tb.subject_id});
         }
     }
 }

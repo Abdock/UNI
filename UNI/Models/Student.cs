@@ -10,12 +10,15 @@ namespace UNI.DBClasses
         public string student_name { get; set; }
         public string student_surname { get; set; }
         public string phone_number { get; set; }
-        public DateTime enrollment_date { get; set; }
+        public DateTime enrollment_date { get; set; } = DateTime.Today;
         
         public int speciality_id { get; set; }
         public long group_id { get; set; }
         public short course { get; set; }
         
+        public int english_skill { get; set; }
+        
+        public long semester_id { get; set; }
         public Student()
         {
             

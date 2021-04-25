@@ -63,15 +63,19 @@ namespace UNI.Controllers
                 {
                     var teacher = await _context.teacher.AddAsync(new Teacher
                         {teacher_name = model.Name, teacher_surname = model.Surname, phone_number = model.PhoneNumber});
-                    await _context.users.AddAsync(new User {password = "Password", type = model.Type, second_id = teacher.Entity.teacher_id});
+                    await _context.users.AddAsync(new User
+                        {password = "Password123", type = model.Type, second_id = teacher.Entity.teacher_id});
                 }
                 else
                 {
                     var student = await _context.student.AddAsync(new Student
-                        {student_name = model.Name, student_surname = model.Surname, phone_number = model.PhoneNumber, speciality_id = int.Parse(model.Speciality.Split(':')[0]), group_id = 1});
+                    {
+                        student_name = model.Name, student_surname = model.Surname, phone_number = model.PhoneNumber,
+                        speciality_id = int.Parse(model.Speciality.Split(':')[0])
+                    });
                     await _context.users.AddAsync(new User
                     {
-                        password = "Password", type = model.Type, second_id = student.Entity.student_id
+                        password = "Password123", type = model.Type, second_id = student.Entity.student_id
                     });
                 }
                 await _context.SaveChangesAsync();

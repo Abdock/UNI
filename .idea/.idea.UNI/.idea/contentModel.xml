@@ -20,12 +20,16 @@
         </e>
         <e p="Models" t="Include">
           <e p="Attendance.cs" t="Include" />
+          <e p="EndtermResult.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="Event.cs" t="Include" />
           <e p="Exam.cs" t="Include" />
           <e p="Faculty.cs" t="Include" />
           <e p="Group.cs" t="Include" />
+          <e p="LevelTest.cs" t="Include" />
+          <e p="MidtermResult.cs" t="Include" />
           <e p="Schedule.cs" t="Include" />
+          <e p="SemetersDate.cs" t="Include" />
           <e p="Speciality.cs" t="Include" />
           <e p="SpecialityTeacher.cs" t="Include" />
           <e p="Student.cs" t="Include" />
