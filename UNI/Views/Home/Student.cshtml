@@ -1,15 +1,15 @@
 ﻿﻿@using UNI.Data
 @using Microsoft.EntityFrameworkCore
 @using UNI.Data
-@model UNI.ViewModels.LoginModel
 @{
+    long uid = long.Parse(Context.User.Identity.Name!);
     ViewData["Title"] = "Main page";
     var subjects = new List<Subject>();
     var db = (ApplicationDbContext) ViewData["db"];
     var conn = db.Database.GetDbConnection();
     await conn.OpenAsync();
     var cmd = conn.CreateCommand();
-    cmd.CommandText = $"SELECT * FROM student_subjects({Model.Login})";
+    cmd.CommandText = $"SELECT * FROM student_subjects({uid})";
     var reader = await cmd.ExecuteReaderAsync();
     while (await reader.ReadAsync())
     {
@@ -18,14 +18,19 @@
     await reader.DisposeAsync();
 }
 <div>
+    <span style="font-family: Verdana, sans-serif; font-size: 16px;">Your id: @uid</span>
+</div>
+<div>
     <ul>
         @{
             foreach (var subject in subjects)
             {
-                cmd.CommandText = $"SELECT * FROM student_current_grade_of_subject({Model.Login}, {subject.subject_id})";
-                double grade = (double) await cmd.ExecuteScalarAsync();
-                cmd.CommandText = $"SELECT * FROM forecast_for_student_of_subject({Model.Login}, {subject.subject_id})";
-                double forecast = (double) await cmd.ExecuteScalarAsync();
+                cmd.CommandText = $"SELECT * FROM student_current_grade_of_subject({uid}, {subject.subject_id})";
+                var predict = await cmd.ExecuteScalarAsync();
+                var grade = (double) (predict is DBNull ? 0.0 : predict);
+                cmd.CommandText = $"SELECT * FROM forecast_for_student_of_subject({uid}, {subject.subject_id})";
+                predict = (await cmd.ExecuteScalarAsync())!;
+                var forecast = (double) (predict is DBNull ? 0.0 : predict);
                 <li>@subject.subject_name, current grade @grade, forecast grade @(grade + forecast)</li>
             }
         }
@@ -38,6 +43,7 @@
         {
             events.Add(new Event {event_id = (long) reader[0], event_icon = (string) reader[1], event_date = (DateTime) reader[2], title = (string) reader[3], description = (string) reader[4]});
         }
+        await reader.DisposeAsync();
         foreach (var e in events)
         {
             <div class="border-top">

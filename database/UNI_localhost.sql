@@ -864,13 +864,34 @@ ALTER TABLE public.teacher ALTER COLUMN teacher_id ADD GENERATED ALWAYS AS IDENT
 
 CREATE TABLE public.users (
     user_id bigint NOT NULL,
-    password character varying DEFAULT 'Password123'::character varying NOT NULL,
-    type character varying DEFAULT 'student'::character varying NOT NULL,
+    password character varying(100) DEFAULT 'Password123'::character varying NOT NULL,
+    type character varying(30) NOT NULL,
     second_id bigint NOT NULL
 );
 
 
 ALTER TABLE public.users OWNER TO postgres;
+
+--
+-- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.users_user_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.users_user_id_seq OWNER TO postgres;
+
+--
+-- Name: users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.users_user_id_seq OWNED BY public.users.user_id;
+
 
 --
 -- Name: elective elective_id; Type: DEFAULT; Schema: public; Owner: postgres
@@ -898,6 +919,13 @@ ALTER TABLE ONLY public.semesters_date ALTER COLUMN semester_id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.student_elective ALTER COLUMN student_id SET DEFAULT nextval('public.student_elective_student_id_seq'::regclass);
+
+
+--
+-- Name: users user_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.users_user_id_seq'::regclass);
 
 
 --
@@ -1037,6 +1065,7 @@ INSERT INTO public.student (student_id, student_name, student_surname, phone_num
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (7, 'Ержигит', 'Мырзабаев', '8 778 946 34 67', '2021-04-23', 1, 2, 1, 1, 1);
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (5, 'Абдусаттар', 'Касымбеков', '8 707 898 98 32', '0001-01-01', 1, 1, 0, 2, 1);
 INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (10, 'Мирас', 'Сагатов', '8 702 366 78 81', '2021-04-25', 1, 1, 1, 1, 1);
+INSERT INTO public.student (student_id, student_name, student_surname, phone_number, enrollment_date, speciality_id, group_id, course, english_skill, semester_id) OVERRIDING SYSTEM VALUE VALUES (13, 'Естай', 'Тастанов', '8 707 575 50 70', '2021-04-27', 1, 2, 1, 1, 1);
 
 
 --
@@ -1094,15 +1123,17 @@ INSERT INTO public.teacher_subject (teacher_id, subject_id) VALUES (7, 3);
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (9, 'Password123', 'teacher', 1);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (10, 'Password123', 'teacher', 2);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (11, 'Password123', 'teacher', 3);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (12, 'Password123', 'teacher', 5);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (13, 'Password123', 'teacher', 6);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (14, 'Password123', 'teacher', 7);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (15, 'Password123', 'student', 5);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (16, 'Password123', 'student', 6);
-INSERT INTO public.users (user_id, password, type, second_id) VALUES (17, 'Password123', 'student', 7);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (1, 'Password123', 'teacher', 1);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (2, 'Password123', 'teacher', 2);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (3, 'Password123', 'teacher', 3);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (4, 'Password123', 'teacher', 5);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (5, 'Password123', 'teacher', 6);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (6, 'Password123', 'teacher', 7);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (7, 'Password123', 'student', 6);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (8, 'Password123', 'student', 7);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (9, 'Password123', 'student', 5);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (10, 'Password123', 'student', 10);
+INSERT INTO public.users (user_id, password, type, second_id) VALUES (11, 'Password123', 'student', 13);
 
 
 --
@@ -1158,7 +1189,7 @@ SELECT pg_catalog.setval('public.student_elective_student_id_seq', 1, false);
 -- Name: student_student_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.student_student_id_seq', 10, true);
+SELECT pg_catalog.setval('public.student_student_id_seq', 13, true);
 
 
 --
@@ -1173,6 +1204,13 @@ SELECT pg_catalog.setval('public.subject_subject_id_seq', 4, true);
 --
 
 SELECT pg_catalog.setval('public.teacher_teacher_id_seq', 8, true);
+
+
+--
+-- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.users_user_id_seq', 11, true);
 
 
 --
@@ -1320,6 +1358,14 @@ ALTER TABLE ONLY public.teacher_subject
 
 
 --
+-- Name: users users_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_pk PRIMARY KEY (user_id);
+
+
+--
 -- Name: attendance_week_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1422,6 +1468,13 @@ CREATE UNIQUE INDEX teacher_subject_teacher_id_idx ON public.teacher_subject USI
 --
 
 CREATE UNIQUE INDEX teacher_teacher_id_idx ON public.teacher USING btree (teacher_id);
+
+
+--
+-- Name: users_user_id_uindex; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX users_user_id_uindex ON public.users USING btree (user_id);
 
 
 --

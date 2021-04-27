@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using UNI.Data
+@using Microsoft.EntityFrameworkCore
+@using System.Data
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -198,12 +201,35 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                    </li>
+                    @{
+                        if (!Context.User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                        }
+                        else
+                        {
+                            var db = (ApplicationDbContext) ViewData["db"];
+                            var conn = db.Database.GetDbConnection();
+                            if (conn.State != ConnectionState.Open)
+                            {
+                                await conn.OpenAsync();
+                            }
+                            var cmd = conn.CreateCommand();
+                            cmd.CommandText = $"SELECT type FROM users WHERE user_id = {Context.User.Identity.Name}";
+                            string userType = (string) await cmd.ExecuteScalarAsync();
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="@(userType != "teacher" ? "Student" : "Teacher")">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                            </li>
+                        }
+                    }
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Elective">Elective</a>
                     </li>

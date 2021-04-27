@@ -25,7 +25,7 @@ namespace UNI.Controllers
             _logger = logger;
             _dbContext = dbContext;
         }
-
+        
         public IActionResult Index()
         {
             ViewData["db"] = _dbContext;
