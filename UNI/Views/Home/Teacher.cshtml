@@ -20,9 +20,8 @@
     @{
         foreach (var group in groups)
         {
-            
-                @group.group_name
-                <ul>
+            <span class="h1">@group.group_name</span>
+                <li>
                     @{
                         cmd.CommandText = $"SELECT * FROM group_subjects({group.group_id})";
                         List<Subject> subjects = new List<Subject>();
@@ -59,13 +58,16 @@
                                     <article>
                                         <p>Low: @low</p>
                                     </article>
+                                    <article>
+                                        <p>Unknown: @(1 - (exc + good + middle + low))</p>
+                                    </article>
                                 </div>
                  
                             </section>
                             ++num;
                         }
                     }
-                </ul>
+                </li>
             
         }
     }

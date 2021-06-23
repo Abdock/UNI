@@ -35,7 +35,7 @@
           <e p="SpecialityTeacher.cs" t="Include" />
           <e p="Student.cs" t="Include" />
           <e p="StudentElective.cs" t="Include" />
-          <e p="subject.cs" t="Include" />
+          <e p="Subject.cs" t="Include" />
           <e p="Teacher.cs" t="Include" />
           <e p="TeacherSubject.cs" t="Include" />
           <e p="User.cs" t="Include" />

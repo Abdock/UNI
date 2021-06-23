@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using UNI.DBClasses;
 using UNI.Models;
 
@@ -40,7 +41,7 @@ namespace UNI.Data
         public DbSet<Elective> elective { get; set; }
         
         public DbSet<StudentElective> student_elective { get; set; }
-        
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
